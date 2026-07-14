@@ -87,13 +87,6 @@ h1, h2, h3, h4 {
 
 section { position: relative; padding: 120px 0; }
 @media (max-width: 768px) { section { padding: 80px 0; } }
-@media (max-width: 480px) {
-  .container { padding: 0 20px; }
-  .nav-inner { padding: 16px 20px; }
-  section { padding: 64px 0; }
-  .manifesto { padding: 72px 0; }
-  .section-head { margin-bottom: 40px; }
-}
 
 .section-head {
   max-width: 640px;
@@ -155,7 +148,7 @@ section { position: relative; padding: 120px 0; }
 
 @media (max-width: 860px) {
   .nav-links { display: none; }
-  .nav-cta, .nav-lang { display: none !important; }
+  .nav-lang { display: none !important; }
   .nav-toggle {
     display: block;
     background: none; border: none; color: var(--text-primary);
@@ -564,6 +557,21 @@ footer {
   color: var(--text-primary);
   line-height: 1.6;
 }
+.story-block { margin-bottom: 56px; }
+.story-block:last-child { margin-bottom: 0; }
+.story-block h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.prose p.story-lead {
+  font-style: italic;
+  color: var(--text-tertiary);
+  font-size: 16px;
+  margin-bottom: 20px;
+}
 .approach-block { margin-bottom: 56px; }
 .approach-block:last-child { margin-bottom: 0; }
 .approach-block h3 {
@@ -756,4 +764,13 @@ footer {
   position: absolute;
   inset: 0;
   background: radial-gradient(ellipse at center, transparent 0%, var(--bg) 88%);
+}
+
+/* ---------- Small-screen spacing (placed last so it wins the cascade) ---------- */
+@media (max-width: 480px) {
+  .container { padding: 0 20px; }
+  .nav-inner { padding: 16px 20px; }
+  section { padding: 64px 0; }
+  .manifesto { padding: 72px 0; }
+  .section-head { margin-bottom: 40px; }
 }
