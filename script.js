@@ -1,126 +1,196 @@
-const translations = {
-  zh: {
-    nav_about: "关于",
-    nav_therapy: "心理咨询",
-    nav_coaching: "成长教练",
-    nav_approach: "取向",
-    nav_contact: "联系",
-    hero_eyebrow: "心理咨询 · 正念 · 内在转化",
-    hero_title: "回到你内在的智慧与完整",
-    hero_text: "为高敏感者、探索者、跨文化生活者，以及正在经历关系、身份与人生转变的人，提供温暖而深入的心理支持。",
-    hero_cta: "预约初次咨询",
-    hero_cta2: "了解我的取向",
-    hero_card_quote: "“疗愈不是成为另一个人，而是回到那个一直存在、却被遗忘的自己。”",
-    about_label: "关于 Cher",
-    about_title: "在临床心理学、正念传统与跨文化经验之间搭桥",
-    about_p1: "我是一名以正念为基础的心理咨询师，受训于那洛巴大学超个人主义心理咨询硕士项目。我的工作融合西方心理学、正念觉察、身体感知与超个人心理学，为来访者提供一个安全、真诚、细腻的空间。",
-    about_p2: "我关注的不只是症状的缓解，也包括一个人如何重新与身体、情绪、关系、文化身份、灵性探索，以及内在生命力建立连接。",
-    credential_label: "资质：",
-    credential_text: "MA, Mindfulness-Based Transpersonal Counseling · LPCC, Colorado",
-    specialty_label: "方向：",
-    specialty_text: "焦虑与情绪调节 · 亲密关系 · 跨文化身份 · 高敏感 · 灵性探索",
-    therapy_label: "心理咨询",
-    therapy_title: "为深度感受者与人生转变期的人而设",
-    therapy_card1_title: "情绪与焦虑",
-    therapy_card1_text: "学习与情绪共处，而不是被情绪淹没；发展更稳定、更慈悲的内在支持系统。",
-    therapy_card2_title: "关系与依恋",
-    therapy_card2_text: "探索关系中的模式、边界、渴望与恐惧，练习更真实、更有力量的连接。",
-    therapy_card3_title: "身份与归属",
-    therapy_card3_text: "支持移民、国际学生、跨文化生活者在多重文化之间寻找自己的声音与归属。",
-    therapy_note: "心理咨询服务目前面向科罗拉多州来访者。跨州或国际来访者可了解 coaching / consultation 服务。",
-    coaching_label: "成长教练",
-    coaching_title: "不只是疗愈，也关乎生命如何绽放",
-    coaching_text: "Coaching 适合希望探索人生方向、创造力、亲密关系、职业转型、灵性成长与有意识生活的人。它不替代心理治疗，而是支持你从更完整的位置做选择、行动与创造。",
-    approach_label: "我的取向",
-    approach_title: "心理学与临在相遇之处",
-    approach_card1_title: "正念取向",
-    approach_card1_text: "以觉察、慈悲和当下体验为核心，帮助你与内在经验建立新的关系。",
-    approach_card2_title: "超个人心理学",
-    approach_card2_text: "尊重人的完整经验，包括身体、情绪、心智、关系、意义与意识层面的探索。",
-    approach_card3_title: "循证整合",
-    approach_card3_text: "整合 ACT、DBT、MBCT、人本存在取向与创伤知情视角，兼具深度与实际工具。",
-    contact_label: "联系",
-    contact_title: "从一次真诚的对话开始",
-    contact_text: "如果你正在寻找一个温暖、专业、尊重你完整生命经验的空间，欢迎预约一次免费初次咨询。",
-    contact_cta: "Email Cher",
-    contact_note: "请将 hello@cherwithin.com 替换为你的正式邮箱。"
-  },
-  en: {
-    nav_about: "About",
-    nav_therapy: "Therapy",
-    nav_coaching: "Coaching",
-    nav_approach: "Approach",
-    nav_contact: "Contact",
-    hero_eyebrow: "Therapy · Mindfulness · Inner Transformation",
-    hero_title: "Come Home to the Wisdom Within",
-    hero_text: "A warm, grounded space for deep feelers, seekers, cross-cultural souls, and those navigating identity, relationships, and life transitions.",
-    hero_cta: "Book a Consultation",
-    hero_cta2: "Explore My Approach",
-    hero_card_quote: "“Healing is not about becoming someone else. It is a return to the self that has always been here.”",
-    about_label: "About Cher",
-    about_title: "Bridging clinical psychology, contemplative practice, and cross-cultural experience",
-    about_p1: "I am a mindfulness-based psychotherapist trained in Transpersonal Counseling at Naropa University. My work integrates Western psychology, mindfulness, body awareness, and transpersonal psychology to create a safe, sincere, and nuanced therapeutic space.",
-    about_p2: "My work is not only about symptom relief. It is also about reconnecting with the body, emotions, relationships, cultural identity, spiritual exploration, and the deeper vitality within.",
-    credential_label: "Credentials:",
-    credential_text: "MA, Mindfulness-Based Transpersonal Counseling · LPCC, Colorado",
-    specialty_label: "Focus:",
-    specialty_text: "Anxiety & emotional regulation · Relationships · Cross-cultural identity · High sensitivity · Spiritual exploration",
-    therapy_label: "Therapy",
-    therapy_title: "For deep feelers and people in life transitions",
-    therapy_card1_title: "Emotions & Anxiety",
-    therapy_card1_text: "Learn to relate to emotions with steadiness and compassion rather than being overwhelmed by them.",
-    therapy_card2_title: "Relationships & Attachment",
-    therapy_card2_text: "Explore patterns, boundaries, longing, and fear while practicing more honest and empowered connection.",
-    therapy_card3_title: "Identity & Belonging",
-    therapy_card3_text: "Support for immigrants, international students, and cross-cultural individuals finding voice and belonging.",
-    therapy_note: "Therapy services are currently available for Colorado residents. Coaching / consultation may be available for clients outside Colorado or internationally.",
-    coaching_label: "Coaching",
-    coaching_title: "Beyond healing: a path toward human flourishing",
-    coaching_text: "Coaching supports those exploring purpose, creativity, relationships, career transitions, spiritual growth, and conscious living. It is not a substitute for psychotherapy, but a space for intentional choice and aligned action.",
-    approach_label: "Approach",
-    approach_title: "Where Psychology Meets Presence",
-    approach_card1_title: "Mindfulness-Based",
-    approach_card1_text: "Cultivating awareness, compassion, and a new relationship with your inner experience.",
-    approach_card2_title: "Transpersonal Psychology",
-    approach_card2_text: "Honoring the full spectrum of human experience: body, emotion, mind, relationship, meaning, and consciousness.",
-    approach_card3_title: "Integrative & Evidence-Informed",
-    approach_card3_text: "Integrating ACT, DBT, MBCT, person-centered and existential approaches, and trauma-informed care.",
-    contact_label: "Contact",
-    contact_title: "Begin with a sincere conversation",
-    contact_text: "If you are looking for a warm, professional space that honors your full lived experience, you are welcome to reach out for a consultation.",
-    contact_cta: "Email Cher",
-    contact_note: "Replace hello@cherwithin.com with your official email address."
+// ============================================
+// 心理咨询师网站 — 交互脚本
+// 签名视觉：神经元连接动画（呼应"心智连接"主题）
+// ============================================
+
+document.addEventListener('DOMContentLoaded', () => {
+  initNeuralCanvas();
+  initReveal();
+  initMobileNav();
+  initChatWidget();
+});
+
+/* ---------- 神经元连接背景动画 ---------- */
+function initNeuralCanvas() {
+  const canvas = document.getElementById('neural-canvas');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  let width, height, nodes = [];
+  const mouse = { x: null, y: null };
+
+  function resize() {
+    width = canvas.width = canvas.offsetWidth;
+    height = canvas.height = canvas.offsetHeight;
+    const count = Math.min(70, Math.floor((width * height) / 18000));
+    nodes = Array.from({ length: count }, () => ({
+      x: Math.random() * width,
+      y: Math.random() * height,
+      vx: (Math.random() - 0.5) * 0.25,
+      vy: (Math.random() - 0.5) * 0.25,
+      r: Math.random() * 1.6 + 1
+    }));
   }
-};
 
-let currentLang = "zh";
-
-function setLanguage(lang) {
-  currentLang = lang;
-  document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
-  document.querySelectorAll("[data-i18n]").forEach((el) => {
-    const key = el.getAttribute("data-i18n");
-    if (translations[lang][key]) {
-      el.textContent = translations[lang][key];
-    }
+  window.addEventListener('resize', resize);
+  canvas.addEventListener('mousemove', (e) => {
+    const rect = canvas.getBoundingClientRect();
+    mouse.x = e.clientX - rect.left;
+    mouse.y = e.clientY - rect.top;
   });
-  document.getElementById("langToggle").textContent = lang === "zh" ? "EN" : "中文";
+  canvas.addEventListener('mouseleave', () => { mouse.x = null; mouse.y = null; });
+
+  resize();
+
+  function draw() {
+    ctx.clearRect(0, 0, width, height);
+
+    for (const n of nodes) {
+      n.x += n.vx;
+      n.y += n.vy;
+      if (n.x < 0 || n.x > width) n.vx *= -1;
+      if (n.y < 0 || n.y > height) n.vy *= -1;
+    }
+
+    for (let i = 0; i < nodes.length; i++) {
+      for (let j = i + 1; j < nodes.length; j++) {
+        const a = nodes[i], b = nodes[j];
+        const dx = a.x - b.x, dy = a.y - b.y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < 130) {
+          const opacity = (1 - dist / 130) * 0.35;
+          ctx.strokeStyle = `rgba(180, 130, 90, ${opacity})`;
+          ctx.lineWidth = 0.6;
+          ctx.beginPath();
+          ctx.moveTo(a.x, a.y);
+          ctx.lineTo(b.x, b.y);
+          ctx.stroke();
+        }
+      }
+      // connect to mouse
+      if (mouse.x !== null) {
+        const dx = a.x - mouse.x, dy = a.y - mouse.y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < 160) {
+          const opacity = (1 - dist / 160) * 0.5;
+          ctx.strokeStyle = `rgba(196, 110, 100, ${opacity})`;
+          ctx.lineWidth = 0.8;
+          ctx.beginPath();
+          ctx.moveTo(a.x, a.y);
+          ctx.lineTo(mouse.x, mouse.y);
+          ctx.stroke();
+        }
+      }
+    }
+
+    for (const n of nodes) {
+      ctx.beginPath();
+      ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
+      ctx.fillStyle = 'rgba(150, 105, 65, 0.55)';
+      ctx.fill();
+    }
+
+    if (!prefersReduced) requestAnimationFrame(draw);
+  }
+
+  draw();
 }
 
-document.getElementById("langToggle").addEventListener("click", () => {
-  setLanguage(currentLang === "zh" ? "en" : "zh");
-});
+/* ---------- 滚动淡入 ---------- */
+function initReveal() {
+  const items = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  items.forEach((el) => observer.observe(el));
+}
 
-document.getElementById("menuToggle").addEventListener("click", () => {
-  document.getElementById("nav").classList.toggle("open");
-});
+/* ---------- 移动端导航 ---------- */
+function initMobileNav() {
+  const toggle = document.querySelector('.nav-toggle');
+  const drawer = document.querySelector('.mobile-drawer');
+  const close = document.querySelector('.mobile-close');
+  if (!toggle || !drawer) return;
+  toggle.addEventListener('click', () => drawer.classList.add('open'));
+  close?.addEventListener('click', () => drawer.classList.remove('open'));
+  drawer.querySelectorAll('a').forEach((a) =>
+    a.addEventListener('click', () => drawer.classList.remove('open'))
+  );
+}
 
-document.querySelectorAll(".nav a").forEach((link) => {
-  link.addEventListener("click", () => {
-    document.getElementById("nav").classList.remove("open");
-  });
-});
+/* ---------- 规则问答聊天助手 ----------
+   这是免费方案：纯前端、按关键词匹配预设回答，
+   不接入任何真实 AI 模型，也不会产生任何调用费用。
+   如果未来想升级成真正的 AI 助手（能自由对话、
+   慢慢学习你的语气），需要额外的后端服务和按量计费的
+   AI API，届时这个函数可以整体替换掉。
 
-document.getElementById("year").textContent = new Date().getFullYear();
+   使用说明：
+   - CHAT_RESPONSES 里的 keywords 是触发词，命中任意一个
+     关键词就会返回对应的 answer。
+   - 想改回答内容，只改 answer 字段里的文字即可。
+   - 想加新问题，复制一组 { keywords, answer } 即可。
+------------------------------------------- */
+function initChatWidget() {
+  const widget = document.querySelector('.chat-widget');
+  if (!widget) return;
 
-setLanguage(currentLang);
+  const toggle = widget.querySelector('.chat-toggle');
+  const panel = widget.querySelector('.chat-panel');
+  const closeBtn = widget.querySelector('.chat-close');
+  const messages = widget.querySelector('.chat-messages');
+  const quickReplies = widget.querySelectorAll('.chat-quick-reply');
+  const lang = document.documentElement.lang === 'en' ? 'en' : 'zh';
+
+  const CHAT_RESPONSES = {
+    zh: {
+      fallback: '这个问题我暂时还回答不了，直接发邮件到 [邮箱地址占位] 或通过 Instagram 私信 Cher，会更快得到准确答复。',
+      items: [
+        { keywords: ['预约', '约时间', 'booking', '怎么约'], answer: '可以直接通过 Calendly 预约时间：<a href="https://calendly.com/cherzhixueli" target="_blank" style="color:var(--accent-cyan);">点击这里预约</a>。' },
+        { keywords: ['价格', '费用', '多少钱', '收费'], answer: '目前心理治疗和成长教练的价格都是 $150 一次。如果你有需要，欢迎询问 sliding scale（滑动制收费）——我会根据季度和当下的接待情况提供滑动制计费。' },
+        { keywords: ['形式', '线上', '线下', '视频', '地点'], answer: '目前 Cher 只提供线上咨询，通过视频通话进行，不受地域限制（心理治疗部分仍需在持证执业州/地区内）。' },
+        { keywords: ['风格', '取向', '流派', '怎么样的咨询师'], answer: 'Cher 的工作方式建立在正念取向的超个人心理咨询之上，同时融合身体经验、格式塔、依恋理论、内在家庭系统（IFS）等视角，具体可以看网站的 Approach 板块。' },
+        { keywords: ['服务对象', '青少年', '成人', '年龄'], answer: 'Cher 目前面向青少年和成人来访者。' }
+      ]
+    },
+    en: {
+      fallback: "I can't answer that one yet — email [email placeholder] or message Cher on Instagram for a direct answer.",
+      items: [
+        { keywords: ['book', 'schedule', 'appointment', 'call'], answer: 'You can book directly via Calendly: <a href="https://calendly.com/cherzhixueli" target="_blank" style="color:var(--accent-cyan);">book a call here</a>.' },
+        { keywords: ['price', 'cost', 'fee', 'rate'], answer: 'Current rates are $150 for both therapy and coaching sessions. Please ask about sliding scale if you need it — I offer sliding-scale rates seasonally, based on availability.' },
+        { keywords: ['online', 'in person', 'format', 'location'], answer: 'Cher currently offers online sessions only, over video — available worldwide for coaching (therapy is limited to the licensed jurisdiction).' },
+        { keywords: ['approach', 'style', 'modality', 'orientation'], answer: "Cher's work is grounded in mindfulness-based transpersonal psychotherapy, along with somatic, Gestalt, attachment, and parts-work perspectives — see the Approach section for more." },
+        { keywords: ['who', 'teen', 'adult', 'age'], answer: 'Cher currently works with teens and adults.' }
+      ]
+    }
+  };
+
+  function addMessage(text, sender) {
+    const el = document.createElement('div');
+    el.className = `chat-message ${sender}`;
+    el.innerHTML = text;
+    messages.appendChild(el);
+    messages.scrollTop = messages.scrollHeight;
+  }
+
+  function respond(question) {
+    addMessage(question, 'user');
+    const data = CHAT_RESPONSES[lang];
+    const match = data.items.find((item) =>
+      item.keywords.some((k) => question.toLowerCase().includes(k.toLowerCase()))
+    );
+    setTimeout(() => addMessage(match ? match.answer : data.fallback, 'bot'), 300);
+  }
+
+  toggle?.addEventListener('click', () => panel.classList.toggle('open'));
+  closeBtn?.addEventListener('click', () => panel.classList.remove('open'));
+  quickReplies.forEach((btn) =>
+    btn.addEventListener('click', () => respond(btn.textContent))
+  );
+}

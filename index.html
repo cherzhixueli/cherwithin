@@ -1,137 +1,326 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cher Within | Psychotherapy, Mindfulness & Human Flourishing</title>
-  <meta name="description" content="Mindfulness-based psychotherapy, coaching, and contemplative psychology for healing, growth, and inner transformation." />
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cher Within · Cher Li · Mind · Love · AI</title>
+<meta name="description" content="Cher Within — Cher Li, a therapist and coach bridging psychology, consciousness, and AI, exploring human flourishing in the age of AI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>body{ font-family: 'Inter', 'Noto Sans SC', sans-serif; }</style>
 </head>
-
 <body>
-  <header class="site-header">
-    <a class="brand" href="#home">
-      <span class="brand-mark"></span>
-      <span>Cher Within</span>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="logo">
+      <img src="portrait.jpg" alt="Cher Li" class="logo-mark">
+      Cher Within
     </a>
+    <ul class="nav-links">
+      <li><a href="#top">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#approach">Approach</a></li>
+      <li><a href="#focus">Focus</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="https://calendly.com/cherzhixueli" target="_blank" class="btn btn-primary nav-cta">Book a Call</a>
+    <a href="zh.html" class="nav-lang">中文</a>
+    <button class="nav-toggle" aria-label="Open menu">☰</button>
+  </div>
+</nav>
 
-    <nav class="nav" id="nav">
-      <a href="#about" data-i18n="nav_about">关于</a>
-      <a href="#therapy" data-i18n="nav_therapy">心理咨询</a>
-      <a href="#coaching" data-i18n="nav_coaching">成长教练</a>
-      <a href="#approach" data-i18n="nav_approach">取向</a>
-      <a href="#contact" data-i18n="nav_contact">联系</a>
-    </nav>
+<div class="mobile-drawer">
+  <button class="mobile-close" aria-label="Close menu">×</button>
+  <a href="#top">Home</a>
+  <a href="#about">About</a>
+  <a href="#approach">Approach</a>
+  <a href="#focus">Focus</a>
+  <a href="#faq">FAQ</a>
+  <a href="#contact">Contact</a>
+  <a href="https://calendly.com/cherzhixueli" target="_blank">Book a Call</a>
+  <a href="zh.html">中文</a>
+</div>
 
-    <div class="header-actions">
-      <button class="lang-toggle" id="langToggle" type="button">EN</button>
-      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation">☰</button>
+<header class="hero" id="top">
+  <div class="ambient-glow ambient-glow-1"></div>
+  <div class="ambient-glow ambient-glow-2"></div>
+  <div class="ambient-glow ambient-glow-3"></div>
+  <canvas id="neural-canvas"></canvas>
+  <div class="container hero-content">
+    <div class="eyebrow">MIND · LOVE · AI</div>
+    <h1>Helping humans stay <span class="accent">deeply human</span><br>in the age of AI.</h1>
+    <p class="hero-sub">
+      Therapy, coaching, and contemplative practice for a changing world.
+      A space for psychology, consciousness, and human flourishing.
+    </p>
+    <p class="hero-sub">
+      Maybe your life looks fine, and something in you still feels off in a way you can't quite explain.
+      Maybe it doesn't look fine at all, and you're simply trying to make it through the day.
+      Whatever brings you here, you're probably looking for more than relief.
+      You long for relationships where you can be yourself. A life that feels true to who you are.
+      And perhaps beneath the stress, the uncertainty, or the pain, there are quieter questions
+      you haven't had the space to sit with — about meaning, connection, belonging, and what it
+      means to live a life that feels deeply your own.
+    </p>
+    <div class="hero-cta">
+      <a href="#approach" class="btn btn-primary">Explore My Approach</a>
     </div>
-  </header>
+    <a href="#manifesto" class="hero-scroll-cue" aria-label="Scroll down">↓</a>
+  </div>
+</header>
 
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-content">
-        <p class="eyebrow" data-i18n="hero_eyebrow">心理咨询 · 正念 · 内在转化</p>
-        <h1 data-i18n="hero_title">回到你内在的智慧与完整</h1>
-        <p class="hero-text" data-i18n="hero_text">
-          为高敏感者、探索者、跨文化生活者，以及正在经历关系、身份与人生转变的人，提供温暖而深入的心理支持。
-        </p>
-        <div class="hero-buttons">
-          <a class="button primary" href="#contact" data-i18n="hero_cta">预约初次咨询</a>
-          <a class="button secondary" href="#approach" data-i18n="hero_cta2">了解我的取向</a>
+<section class="manifesto" id="manifesto">
+  <div class="manifesto-inner reveal">
+    <div class="manifesto-mark"></div>
+    <p>In the age of AI, knowledge is becoming abundant. But there are still
+      <span class="accent">three things no technology can learn for us</span>:
+      how to come home to our bodies, how to love another human being, and how to live
+      with the awareness that our lives are finite.</p>
+  </div>
+</section>
+
+<section id="focus">
+  <div class="section-ambient-photo" style="background-image:url('break-rock.jpg');"></div>
+  <div class="container">
+    <div class="section-head reveal" style="text-align:center; margin:0 auto 40px; max-width:640px;">
+      <div class="eyebrow" style="justify-content:center;">WHO THIS IS FOR</div>
+      <h2>Who This Is For</h2>
+      <p>A quick look at who I work with, and what tends to bring people here.</p>
+    </div>
+    <div class="focus-block reveal">
+      <div class="focus-row">
+        <span class="focus-label">Who I Work With</span>
+        <div class="focus-tags">
+          <span class="focus-tag">Teens</span>
+          <span class="focus-tag">Adults</span>
         </div>
       </div>
-      <div class="hero-card">
-        <p data-i18n="hero_card_quote">“Healing is not about becoming someone else. It is a return to the self that has always been here.”</p>
-      </div>
-    </section>
-
-    <section class="section" id="about">
-      <div class="section-label" data-i18n="about_label">关于 Cher</div>
-      <div class="two-column">
-        <h2 data-i18n="about_title">在临床心理学、正念传统与跨文化经验之间搭桥</h2>
-        <div>
-          <p data-i18n="about_p1">
-            我是一名以正念为基础的心理咨询师，受训于那洛巴大学超个人主义心理咨询硕士项目。我的工作融合西方心理学、正念觉察、身体感知与超个人心理学，为来访者提供一个安全、真诚、细腻的空间。
-          </p>
-          <p data-i18n="about_p2">
-            我关注的不只是症状的缓解，也包括一个人如何重新与身体、情绪、关系、文化身份、灵性探索，以及内在生命力建立连接。
-          </p>
-          <div class="info-list">
-            <p><strong data-i18n="credential_label">资质：</strong><span data-i18n="credential_text">MA, Mindfulness-Based Transpersonal Counseling · LPCC, Colorado</span></p>
-            <p><strong data-i18n="specialty_label">方向：</strong><span data-i18n="specialty_text">焦虑与情绪调节 · 亲密关系 · 跨文化身份 · 高敏感 · 灵性探索</span></p>
-          </div>
+      <div class="focus-row">
+        <span class="focus-label">Areas of Focus</span>
+        <div class="focus-tags">
+          <span class="focus-tag">Depression</span>
+          <span class="focus-tag">Anxiety</span>
+          <span class="focus-tag">Life Transitions</span>
+          <span class="focus-tag">Grief & Loss</span>
+          <span class="focus-tag">Sexuality</span>
+          <span class="focus-tag">Spirituality</span>
+          <span class="focus-tag">Life Purpose</span>
+          <span class="focus-tag">Happiness</span>
+          <span class="focus-tag">Relationships</span>
+          <span class="focus-tag">Stress</span>
+          <span class="focus-tag">Identity & Meaning in the Age of AI</span>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <section class="section muted" id="therapy">
-      <div class="section-label" data-i18n="therapy_label">心理咨询</div>
-      <h2 data-i18n="therapy_title">为深度感受者与人生转变期的人而设</h2>
-      <div class="cards">
-        <article class="card">
-          <h3 data-i18n="therapy_card1_title">情绪与焦虑</h3>
-          <p data-i18n="therapy_card1_text">学习与情绪共处，而不是被情绪淹没；发展更稳定、更慈悲的内在支持系统。</p>
-        </article>
-        <article class="card">
-          <h3 data-i18n="therapy_card2_title">关系与依恋</h3>
-          <p data-i18n="therapy_card2_text">探索关系中的模式、边界、渴望与恐惧，练习更真实、更有力量的连接。</p>
-        </article>
-        <article class="card">
-          <h3 data-i18n="therapy_card3_title">身份与归属</h3>
-          <p data-i18n="therapy_card3_text">支持移民、国际学生、跨文化生活者在多重文化之间寻找自己的声音与归属。</p>
-        </article>
+<section id="about">
+  <div class="section-ambient-photo" style="background-image:url('break-peak.jpg');"></div>
+  <div class="container">
+    <div class="about-grid reveal">
+      <div class="about-portrait">
+        <img src="portrait.jpg" alt="Cher Li">
       </div>
-      <p class="note" data-i18n="therapy_note">
-        心理咨询服务目前面向科罗拉多州来访者。跨州或国际来访者可了解 coaching / consultation 服务。
-      </p>
-    </section>
-
-    <section class="section" id="coaching">
-      <div class="section-label" data-i18n="coaching_label">成长教练</div>
-      <div class="two-column">
-        <h2 data-i18n="coaching_title">不只是疗愈，也关乎生命如何绽放</h2>
-        <p data-i18n="coaching_text">
-          Coaching 适合希望探索人生方向、创造力、亲密关系、职业转型、灵性成长与有意识生活的人。它不替代心理治疗，而是支持你从更完整的位置做选择、行动与创造。
+      <div>
+        <div class="eyebrow">About Me</div>
+        <h2>Where mind, love, and AI meet</h2>
+        <p style="color:var(--text-secondary); font-size:17px;">
+          I've worked in the helping profession, in various forms, for six years — standing at the
+          intersection of psychology, spirituality, consciousness research, and artificial intelligence,
+          exploring how we stay grounded in our bodies and minds, how we love, and how we live a life
+          that is truly our own in the age of AI.
         </p>
       </div>
-    </section>
+    </div>
 
-    <section class="section muted" id="approach">
-      <div class="section-label" data-i18n="approach_label">我的取向</div>
-      <h2 data-i18n="approach_title">Where Psychology Meets Presence</h2>
-      <div class="cards">
-        <article class="card">
-          <h3 data-i18n="approach_card1_title">正念取向</h3>
-          <p data-i18n="approach_card1_text">以觉察、慈悲和当下体验为核心，帮助你与内在经验建立新的关系。</p>
-        </article>
-        <article class="card">
-          <h3 data-i18n="approach_card2_title">超个人心理学</h3>
-          <p data-i18n="approach_card2_text">尊重人的完整经验，包括身体、情绪、心智、关系、意义与意识层面的探索。</p>
-        </article>
-        <article class="card">
-          <h3 data-i18n="approach_card3_title">循证整合</h3>
-          <p data-i18n="approach_card3_text">整合 ACT、DBT、MBCT、人本存在取向与创伤知情视角，兼具深度与实际工具。</p>
-        </article>
+    <div class="prose" style="margin-top:80px;">
+      <p class="reveal">For as long as I can remember, I've been curious about what it means to be human — the parts of us that don't show up on a resume or a first impression: our emotions, our relationships, the quiet longing to belong and be understood.</p>
+
+      <p class="reveal">I was a sensitive kid. I picked up on things before anyone said them out loud — the mood in a room, what someone wasn't saying. For a long time I thought that meant something was wrong with me. It took years to understand that sensitivity wasn't a problem to fix. It was something to learn how to listen to.</p>
+
+      <p class="reveal">When I was 14, I lost someone I loved. That kind of loss, at that age, doesn't really go away. It just sits there and asks you questions you don't have answers for. What does it actually mean to live? What's still there once everything familiar is gone? What happens when we die? What does it mean to exist? I didn't resolve any of it. I just carried those questions for years.</p>
+
+      <p class="reveal">Growing up in China, a lot of my early life was spent trying to be who I was expected to become. Later, after going through a dark period in my life, something shifted in me. I followed something harder to explain — a calling. And I moved to the United States without having things ready. What started as an educational move turned into something bigger: relearning who I was outside the roles I'd inherited.</p>
+
+      <p class="reveal">I jumped into a place without knowing anybody there and started the wildest adventure I've ever had, or could have imagined.</p>
+
+      <p class="reveal">I got the chance to be immersed in an environment of psychology, spirituality, consciousness, and Buddhism. I trained in mindfulness-based, transpersonal counseling at Naropa University, in a program that treats the body, emotion, spiritual life, and psychological process as inseparable. I wanted to understand why we can have everything we were told would make us happy and still feel like something's missing. I wanted tools that went deeper than talk alone — tools that could help others the way certain people, at the right moment, helped change my own life.</p>
+
+      <p class="reveal">I'm also genuinely curious about AI and consciousness. We're living in a world where the development of AI is inevitable, and it's already everywhere, whether we acknowledge it or not.</p>
+
+      <p class="reveal">Technology can move information faster than anything in human history. But healing has never really worked that way. It still happens slowly, usually in the presence of another person who is actually paying attention, and who is willing to share their own lived experience with you.</p>
+
+      <p class="reveal">AI can teach us more than ever before. But there are a few things it still can't do for us — how to actually live inside our own bodies, how to love without flinching, how to face the fact that all of this ends.</p>
+
+      <p class="reveal">I find myself wondering what stays essentially human as everything else speeds up. And what that means for how we connect, how we love, and how we heal.</p>
+
+      <p class="reveal">Today, I work with teens and adults navigating transitions, life challenges, relationships, identity, and the quiet sense that something deeper is waiting to be lived. Healing, to me, isn't about becoming a fixed or perfect version of yourself. It's closer to coming back into relationship with the parts of you — your body, your history, your instincts — that you may have learned to override.</p>
+
+      <p class="reveal">My hope is to offer a space where you can slow down, be actually seen, and find your way back to something that feels honest, connected, and fully yours.</p>
+    </div>
+  </div>
+</section>
+
+<section id="approach" style="background:var(--bg-secondary);">
+  <div class="section-ambient-photo" style="background-image:url('break-valley.jpg');"></div>
+  <div class="container">
+    <div class="section-head reveal" style="text-align:center; margin:0 auto 56px; max-width:640px;">
+      <div class="eyebrow" style="justify-content:center;">APPROACH</div>
+      <h2>What Our Work Together Might Look Like</h2>
+    </div>
+    <div class="prose reveal">
+      <p class="approach-lead">A different way of being with yourself.</p>
+      <p>Many of us become very good at understanding ourselves. We can explain why we feel the way we do. We know our patterns. We recognize the stories we've been carrying for years. And yet, something still doesn't change. Because insight alone rarely transforms us. Real change begins when we learn to experience ourselves differently — not by trying harder, not by becoming someone else, but by slowing down enough to notice what has been there all along.</p>
+
+      <div class="approach-block">
+        <h3>We begin with what is happening now.</h3>
+        <p>Rather than trying to fix you or analyze your life from a distance, we gently turn toward what is happening in this moment — your breathing, your body, your emotions, the ways you move toward yourself, away from yourself, and toward others. Sometimes, what has remained outside of awareness for years becomes clear when we finally slow down enough to notice it.</p>
       </div>
-    </section>
 
-    <section class="section contact" id="contact">
-      <div class="section-label" data-i18n="contact_label">联系</div>
-      <h2 data-i18n="contact_title">从一次真诚的对话开始</h2>
-      <p data-i18n="contact_text">
-        如果你正在寻找一个温暖、专业、尊重你完整生命经验的空间，欢迎预约一次免费初次咨询。
-      </p>
-      <a class="button primary" href="mailto:hello@cherwithin.com" data-i18n="contact_cta">Email Cher</a>
-      <p class="small" data-i18n="contact_note">请将 hello@cherwithin.com 替换为你的正式邮箱。</p>
-    </section>
-  </main>
+      <div class="approach-block">
+        <h3>We make room for every part of you.</h3>
+        <p>Most of us carry parts that learned to protect us — parts that strive, please, perform, withdraw, criticize, stay busy, or hide. And there are often parts of ourselves that have been pushed into the shadows, parts we learned were too much, not enough, unacceptable, or unsafe to show. These parts are not mistakes to eliminate. They each developed for a reason. Sometimes the parts you dislike most are the ones that have worked the hardest to keep you alive. Instead of fighting them, we become curious about what they are trying to protect, what they long for, and how they have helped you survive. As these hidden and protective parts begin to feel seen with compassion, they often become sources of creativity, vitality, and a deeper sense of being yourself.</p>
+      </div>
 
-  <footer class="footer">
-    <p>© <span id="year"></span> Cher Within. All rights reserved.</p>
-  </footer>
+      <div class="approach-block">
+        <h3>Something changes when we are truly met.</h3>
+        <p>We spend much of our lives adapting — learning who to be, what to hide, how to stay safe. Therapy offers something different: a space where nothing needs to be performed, earned, or proved. A space where every part of you is welcome, even the parts you've learned to hide. Where you can begin to meet yourself with the same openness you may have long offered to everyone else. Over time, that way of relating doesn't stay inside the therapy room. It begins to shape how you relate to yourself, the people you love, and the life you're creating — not because someone told you who to become, but because you gradually remember what it feels like to be fully yourself.</p>
+      </div>
 
-  <script src="script.js"></script>
+      <div class="approach-block">
+        <h3>Sometimes, healing happens beyond the therapy room.</h3>
+        <p>While many conversations take place in the therapy room, healing is not confined to it. For some people, nature offers a different kind of presence. The living world has a way of slowing us down. Sometimes what cannot be reached through conversation begins to unfold in the quiet rhythm of walking, breathing, and simply being outdoors. When it feels supportive and appropriate, we may integrate nature into our work, allowing the living world to become another companion in the process of reconnecting with yourself.</p>
+      </div>
+
+      <div class="approach-block">
+        <h3>What informs my practice</h3>
+        <p>My work is grounded in mindfulness-based transpersonal psychotherapy and informed by somatic therapy, Gestalt therapy, attachment theory, parts work, shadow work, contemplative psychology, interpersonal neurobiology, and nature-based therapy.</p>
+        <p>Rather than following a single model, I draw from these perspectives in service of each person's unique history, relationships, and way of being. Every therapeutic relationship unfolds differently, and our work will be shaped by what is most meaningful and supportive for you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="process" style="background:var(--bg-secondary);">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Process</div>
+      <h2>From first contact to ongoing care</h2>
+    </div>
+    <div class="timeline reveal">
+      <div class="timeline-line"></div>
+      <div class="timeline-item">
+        <span class="timeline-num">01</span>
+        <h4>Reach Out</h4>
+        <p>Contact via the form or phone, sharing what you'd like to work on and your availability.</p>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-num">02</span>
+        <h4>Initial Assessment</h4>
+        <p>The first session covers background and sets shared goals for the work ahead.</p>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-num">03</span>
+        <h4>A Tailored Plan</h4>
+        <p>Based on the assessment, we agree on a pace and approach that fits you.</p>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-num">04</span>
+        <h4>Ongoing Support</h4>
+        <p>Regular sessions with periodic check-ins to review progress and adjust direction.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="container">
+    <div class="section-head reveal" style="text-align:center; margin:0 auto 56px;">
+      <div class="eyebrow" style="justify-content:center;">QUESTIONS YOU MAY BE WONDERING</div>
+      <h2>Questions You May Be Wondering</h2>
+    </div>
+    <div class="faq-list reveal">
+      <details class="faq-item">
+        <summary>Do I need to be in crisis to begin working together?</summary>
+        <p>Not at all. Many people reach out not because something is "wrong," but because they're longing for a deeper relationship with themselves. You might be navigating a life transition, exploring relationships, questioning your direction, or simply sensing that something within you is asking for attention. Our work together isn't only about reducing suffering. It's also about cultivating greater awareness, resilience, meaning, and connection.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What should I prepare before our first session?</summary>
+        <p>Nothing needs to be perfectly prepared. You don't need to organize your thoughts or know exactly what to say. Simply arrive as you are. Our first session is an opportunity for us to get to know one another, explore what brings you here, and begin discovering what kind of support would be most helpful for you.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How do I know which service is right for me?</summary>
+        <p>The labels matter less than the support you need. Depending on where you live and the nature of our work together, our sessions may be offered within either a psychotherapy or coaching framework. While these services follow different ethical and legal guidelines, my intention remains the same: to offer a thoughtful, compassionate, and individualized space that supports your growth and well-being. If you're unsure which option is appropriate, we can discuss it together during a consultation.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Can AI replace therapy?</summary>
+        <p>AI can be an extraordinary tool for reflection, learning, and support. I use AI myself in many aspects of my work and life, and I believe it has the potential to expand human learning, creativity, and access to knowledge. At the same time, healing is more than information. It unfolds through presence, relationship, and lived experience. As AI becomes more capable, I believe qualities like emotional depth, authentic connection, and the experience of being truly met become even more valuable.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What if I'm not sure where to begin?</summary>
+        <p>That's completely okay. You don't need to have everything figured out before reaching out. Sometimes the first step is simply becoming curious about what has been quietly asking for your attention. If you're wondering whether working together might be a good fit, you're welcome to schedule a complimentary consultation. We can begin with a conversation.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>info@cherwithin.com</p>
+        <a href="https://www.instagram.com/cher.within" target="_blank">Instagram · @cher.within</a>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="#about">About</a>
+        <a href="#approach">Approach</a>
+        <a href="#focus">Focus</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="footer-col">
+        <h4>Booking</h4>
+        <a href="https://calendly.com/cherzhixueli" target="_blank">Book a Call →</a>
+      </div>
+      <div class="footer-col">
+        <h4>Language</h4>
+        <a href="zh.html">Mandarin</a>
+        <a href="index.html">English</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Cher Li. All rights reserved.</span>
+      <span>This site is not for emergencies; if you're in crisis, contact local emergency services or a crisis line.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="chat-widget">
+  <button class="chat-toggle" aria-label="Open chat assistant">💬</button>
+  <div class="chat-panel">
+    <div class="chat-header">
+      <span>CHER WITHIN · ASSISTANT</span>
+      <button class="chat-close" aria-label="Close">×</button>
+    </div>
+    <div class="chat-messages">
+      <div class="chat-message bot">Hi, I'm Cher's assistant. Tap a question below, or type what you'd like to know.</div>
+    </div>
+    <div class="chat-quick-replies">
+      <span class="chat-quick-reply">How do I book?</span>
+      <span class="chat-quick-reply">What are your rates?</span>
+      <span class="chat-quick-reply">Online sessions?</span>
+      <span class="chat-quick-reply">What's your style?</span>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
