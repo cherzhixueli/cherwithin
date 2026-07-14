@@ -606,6 +606,25 @@ footer {
   margin-bottom: 20px;
 }
 
+/* ---------- Focus reasons (适合人群自查) ---------- */
+.focus-reasons {
+  max-width: 700px;
+  margin: 0 auto;
+  display: grid;
+  gap: 28px;
+}
+.focus-reason h3 {
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--accent-cyan);
+  margin-bottom: 8px;
+}
+.focus-reason p {
+  color: var(--text-secondary);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
 /* ---------- Focus tags (服务人群 / 关注议题) ---------- */
 .focus-block { margin-top: 56px; }
 .focus-row { display: flex; flex-wrap: wrap; align-items: baseline; gap: 16px; margin-bottom: 24px; }
