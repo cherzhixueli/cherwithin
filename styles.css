@@ -19,7 +19,11 @@
   --text-tertiary: #9C8D7C;
   --shadow-soft: 0 24px 60px -28px rgba(180, 130, 90, 0.35);
 
-  /* Type */
+  /* Type
+     --font-heading is the single swap point for h1-h4 only.
+     Everything else (logo, manifesto quote, blockquote, faq "+") keeps
+     --font-display (Space Grotesk) untouched. */
+  --font-heading: 'Lora', 'Noto Serif SC', serif;
   --font-display: 'Space Grotesk', 'Noto Sans SC', sans-serif;
   --font-body: 'Noto Sans SC', 'Inter', sans-serif;
   --font-mono: 'IBM Plex Mono', monospace;
@@ -79,7 +83,7 @@ img { max-width: 100%; display: block; }
 }
 
 h1, h2, h3, h4 {
-  font-family: var(--font-display);
+  font-family: var(--font-heading);
   font-weight: 600;
   line-height: 1.2;
   letter-spacing: -0.01em;
@@ -265,6 +269,13 @@ section { position: relative; padding: 120px 0; }
   color: var(--text-secondary);
   max-width: 540px;
   margin-bottom: 40px;
+}
+.hero-lead {
+  font-family: var(--font-heading);
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--text-primary);
 }
 .hero-cta { display: flex; gap: 16px; flex-wrap: wrap; }
 
