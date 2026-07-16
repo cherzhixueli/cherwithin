@@ -117,8 +117,8 @@ section { position: relative; padding: 120px 0; }
   justify-content: space-between;
 }
 .logo {
-  font-family: var(--font-display);
-  font-size: 18px;
+  font-family: var(--font-heading);
+  font-size: 20px;
   font-weight: 700;
   display: flex;
   align-items: center;
